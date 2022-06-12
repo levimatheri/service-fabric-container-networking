@@ -3,22 +3,22 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "clusterName": {
-      "value": "glowingwafflesf"
+      "value": ""
     },
     "adminUsername": {
-      "value": "glowingadmin"
+      "value": ""
     },
     "adminPassword": {
-      "value": "Testing12345!"
+      "value": ""
     },
     "certificateThumbprint": {
-      "value": "164C610ABCE94F7A29BDB59A9C48939BE1E4C927"
+      "value": ""
     },
     "sourceVaultResourceId": {
-      "value": "/subscriptions/9117b252-37b3-4235-9f6b-e5703ff55d97/resourceGroups/glowingwafflerg2/providers/Microsoft.KeyVault/vaults/glowingwafflekv3"
+      "value": ""
     },
     "certificateUrlValue": {
-      "value": "https://glowingwafflekv3.vault.azure.net/secrets/ClusterCert/f7c39f39f53040abbb5b3efadeac1763"
+      "value": ""
     }
   }
 }
