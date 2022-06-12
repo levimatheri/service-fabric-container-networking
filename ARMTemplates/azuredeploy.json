@@ -688,7 +688,7 @@
         },
         "clientCertificateThumbprints": [
           {
-            "certificateThumbprint": "2157F0FEAABDE52F101BFD7EE20ED20CC0D71FD9",
+            "certificateThumbprint": "",
             "isAdmin": true
           }
         ],
