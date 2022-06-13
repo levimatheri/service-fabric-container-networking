@@ -20,8 +20,9 @@
                                     AzureActiveDirectory="true"
                                     ServerCertThumbprint="0123456789012345678901234567890123456789" />
   -->
-  <ClusterConnectionParameters ConnectionEndpoint="glowingwafflesf.eastus.cloudapp.azure.com:19000" X509Credential="true" ServerCertThumbprint="164C610ABCE94F7A29BDB59A9C48939BE1E4C927" FindType="FindByThumbprint" FindValue="2157F0FEAABDE52F101BFD7EE20ED20CC0D71FD9" StoreLocation="CurrentUser" StoreName="My" />
+  <!--<ClusterConnectionParameters ConnectionEndpoint="glowingwafflesf.eastus.cloudapp.azure.com:19000" X509Credential="true" ServerCertThumbprint="164C610ABCE94F7A29BDB59A9C48939BE1E4C927" FindType="FindByThumbprint" FindValue="2157F0FEAABDE52F101BFD7EE20ED20CC0D71FD9" StoreLocation="CurrentUser" StoreName="My" />-->
   <ApplicationParameterFile Path="..\ApplicationParameters\Cloud.xml" />
+  <ClusterConnectionParameters ConnectionEndpoint="glowingwafflesf.eastus.cloudapp.azure.com:19000" X509Credential="true" ServerCertThumbprint="8FEBED55E7EEDF0C06A6097D7E57D0BDAC19371D" FindType="FindByThumbprint" FindValue="B1339459850D2748A4345E6DD9E6902A9143EEF3" StoreLocation="CurrentUser" StoreName="My" />
   <StartupServiceParameterFile Path="..\StartupServiceParameters\Cloud.xml" />
   <CopyPackageParameters CompressPackage="true" />
 </PublishProfile>

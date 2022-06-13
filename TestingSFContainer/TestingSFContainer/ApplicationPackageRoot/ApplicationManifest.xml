@@ -13,10 +13,14 @@
     <ServiceManifestRef ServiceManifestName="SFContainerPkg" ServiceManifestVersion="1.0.0" />
     <ConfigOverrides />
     <Policies>
+      <EndpointBindingPolicy CertificateRef="SslCertByTP" EndpointRef="SFContainerTypeEndpoint"/>
       <ContainerHostPolicies CodePackageRef="Code">
         <RepositoryCredentials AccountName="" Password="" PasswordEncrypted="false" />
         <NetworkConfig NetworkType="Open" />
       </ContainerHostPolicies>
     </Policies>
   </ServiceManifestImport>
+ <Certificates>
+    <EndpointCertificate Name="SslCertByTP" X509FindValue="" X509StoreName="MY" />  
+  </Certificates>
 </ApplicationManifest>

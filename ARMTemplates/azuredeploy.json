@@ -9,6 +9,19 @@
     }
   },
   "parameters": {
+    "sfReverseProxyCertificateThumbprint": {
+      "type": "string"
+    },
+    "sfReverseProxyCertificateStoreName": {
+      "type": "string"
+    },
+    "SFReverseProxyPort": {
+      "type": "int",
+      "defaultValue": 19081,
+      "metadata": {
+          "description": "Endpoint for Service Fabric Reverse proxy"
+      }
+    },
     "location": {
       "type": "string",
       "defaultValue": "[resourceGroup().location]",
@@ -682,13 +695,17 @@
         "clusterName": "[parameters('clusterName')]"
       },
       "properties": {
+        "reverseProxyCertificate": {
+            "thumbprint": "[parameters('sfReverseProxyCertificateThumbprint')]",
+            "x509StoreName": "[parameters('sfReverseProxyCertificateStoreName')]"
+        },
         "certificate": {
           "thumbprint": "[parameters('certificateThumbprint')]",
           "x509StoreName": "[parameters('certificateStoreValue')]"
         },
         "clientCertificateThumbprints": [
           {
-            "certificateThumbprint": "2157F0FEAABDE52F101BFD7EE20ED20CC0D71FD9",
+            "certificateThumbprint": "",
             "isAdmin": true
           }
         ],
@@ -740,6 +757,7 @@
         "managementEndpoint": "[format('https://{0}:{1}', reference(resourceId('Microsoft.Network/publicIPAddresses', variables('lbIPName'))).dnsSettings.fqdn, variables('nt0fabricHttpGatewayPort'))]",
         "nodeTypes": [
           {
+            "reverseProxyEndpointPort": "[parameters('SFReverseProxyPort')]",
             "name": "[variables('vmNodeType0Name')]",
             "applicationPorts": {
               "endPort": "[variables('nt0applicationEndPort')]",
