@@ -1,0 +1,183 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "clusterLocation": {
+            "value": "eastus"
+        },
+        "clusterName": {
+            "value": "glowingwafflesvcfbc2"
+        },
+        "nt0applicationStartPort": {
+            "value": 20000
+        },
+        "nt0applicationEndPort": {
+            "value": 30000
+        },
+        "nt0ephemeralStartPort": {
+            "value": 49152
+        },
+        "nt0ephemeralEndPort": {
+            "value": 65534
+        },
+        "nt0fabricTcpGatewayPort": {
+            "value": 19000
+        },
+        "nt0fabricHttpGatewayPort": {
+            "value": 19080
+        },
+        "nt0reverseProxyEndpointPort": {
+            "value": 19081
+        },
+        "nt1applicationStartPort": {
+            "value": 20000
+        },
+        "nt1applicationEndPort": {
+            "value": 30000
+        },
+        "nt1ephemeralStartPort": {
+            "value": 32767
+        },
+        "nt1ephemeralEndPort": {
+            "value": 65534
+        },
+        "nt1fabricTcpGatewayPort": {
+            "value": 19000
+        },
+        "nt1fabricHttpGatewayPort": {
+            "value": 19080
+        },
+        "nt1reverseProxyEndpointPort": {
+            "value": 19081
+        },
+        "subnet0Name": {
+            "value": "Subnet-0"
+        },
+        "subnet0Prefix": {
+            "value": "10.0.0.0/24"
+        },
+        "computeLocation": {
+            "value": "eastus"
+        },
+        "publicIPAddressName": {
+            "value": "glowingwafflesvcfbc2-PubIP"
+        },
+        "publicIPAddressType": {
+            "value": "Dynamic"
+        },
+        "vmStorageAccountContainerName": {
+            "value": "vhds"
+        },
+        "adminUserName": {
+            "value": "glowingadmin"
+        },
+        "adminPassword": {
+            "value": "Testing12345!"
+        },
+        "virtualNetworkName": {
+            "value": "VNet-glowingwafflesvcfbc2"
+        },
+        "addressPrefix": {
+            "value": "10.0.0.0/16"
+        },
+        "dnsName": {
+            "value": "glowingwafflesvcfbc2"
+        },
+        "nicName": {
+            "value": "NIC-glowingwafflesvcfbc2"
+        },
+        "lbName": {
+            "value": "LB-glowingwafflesvcfbc2"
+        },
+        "lbIPName": {
+            "value": "LBIP-glowingwafflesvcfbc2"
+        },
+        "overProvision": {
+            "value": "false"
+        },
+        "vmImagePublisher": {
+            "value": "MicrosoftWindowsServer"
+        },
+        "vmImageOffer": {
+            "value": "WindowsServer"
+        },
+        "vmImageSku": {
+            "value": "2019-Datacenter-with-Containers"
+        },
+        "vmImageVersion": {
+            "value": "latest"
+        },
+        "vm1ImagePublisher": {
+            "value": "MicrosoftWindowsServer"
+        },
+        "vm1ImageOffer": {
+            "value": "WindowsServer"
+        },
+        "vm1ImageSku": {
+            "value": "2019-Datacenter"
+        },
+        "vm1ImageVersion": {
+            "value": "latest"
+        },
+        "sourceVaultValue": {
+            "value": "/subscriptions/9117b252-37b3-4235-9f6b-e5703ff55d97/resourceGroups/glowingwaffleb2crg/providers/Microsoft.KeyVault/vaults/glowingwafflekv2"
+        },
+        "certificateSecretName": {
+            "value": "clustercert"
+        },
+        "secondaryCertificateSecretName": {
+            "value": "clustersecondarycert"
+        },
+        "reverseProxySecretName": {
+            "value": "reverseproxycert"
+        },
+        "clientCertificateThumbprint": {
+            "value": "39D8BFB536B1ABB1D11828537F7A7DB159A75FF4"
+        },
+        "clusterProtectionLevel": {
+            "value": "EncryptAndSign"
+        },
+        "certificateStoreValue": {
+            "value": "My"
+        },
+        "certificateThumbprint": {
+            "value": "58C722E588C7D7A7ED540E1256CD5A7B076A5389"
+        },
+        "secondaryCertificateThumbprint": {
+            "value": "554B95F85C71433937DFF5DD5A8BD66D6225A2DC"
+        },
+        "reverseProxyCertificateStoreValue": {
+            "value": "My"
+        },
+        "reverseProxyCertificateThumbprint": {
+            "value": "4DD1DE8FE2B771AB542A7070C30FBA119A00CB63"
+        },
+        "storageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "supportLogStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "supportLogStorageAccountName": {
+            "value": "sflogsglowingwaffles1625"
+        },
+        "nt0InstanceCount": {
+            "value": 5
+        },
+        "vmNodeType0Name": {
+            "value": "Type274"
+        },
+        "vmNodeType0Size": {
+            "value": "Standard_D2s_v3"
+        },
+        "nt1InstanceCount": {
+            "value": 5
+        },
+        "vmNodeType1Name": {
+            "value": "Type275"
+        },
+        "vmNodeType1Size": {
+            "value": "Standard_D2s_v3"
+        }
+    }
+}

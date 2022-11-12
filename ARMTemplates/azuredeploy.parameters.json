@@ -3,28 +3,31 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "clusterName": {
-      "value": ""
+      "value": "glowingwafflesvcfbc"
     },
     "adminUsername": {
-      "value": ""
+      "value": "glowingadmin"
     },
     "adminPassword": {
-      "value": ""
+      "value": "Testing12345!"
     },
     "certificateThumbprint": {
-      "value": ""
+      "value": "CF20044F504E911B2635884C3739C3B39D9B75AC"
     },
     "sourceVaultResourceId": {
-      "value": ""
+      "value": "/subscriptions/9117b252-37b3-4235-9f6b-e5703ff55d97/resourceGroups/glowingwafflerg/providers/Microsoft.KeyVault/vaults/glowingwafflekv"
     },
     "certificateUrlValue": {
-      "value": ""
+      "value": "https://glowingwafflekv.vault.azure.net/secrets/Clustercert/4f18847dfef54edf93b333924739c92b"
     },
     "sfReverseProxyCertificateThumbprint": {
-      "value": ""
+      "value": "584E2934688C64CBD63EB6BD2CAC3C8BACB1DA66"
     },
     "sfReverseProxyCertificateStoreName": {
       "value": "My"
+    },
+    "clientCertificateThumbprint": {
+      "value": "C8382EEFCF3783B9B96DD06161B8136B3ED18B59"
     }
   }
 }
